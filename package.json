@@ -13,5 +13,10 @@
     "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
     "cucumber": "^6.0.7",
     "cypress": "^14.2.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   }
+  
 }
