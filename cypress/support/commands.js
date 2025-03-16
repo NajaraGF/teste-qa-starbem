@@ -5,3 +5,4 @@ Cypress.Commands.add("login", (email, password) => {
     cy.contains("button", "Acessar").click();
   });
   
+  
