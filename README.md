@@ -9,7 +9,8 @@ Foram criados testes automatizados para validar os principais fluxos da aplicaç
 
 Os testes abrangem:
 
-- **Fluxo de Login:**  
+- **Fluxo de Login:**
+  - Cenários em BDD descrevendo login com credenciais válidas.   
   - Validação de login com credenciais válidas.  
   - Verificação de mensagens de erro para credenciais inválidas ou campos vazios.
 
@@ -17,6 +18,7 @@ Os testes abrangem:
   - Exibição do formulário de registro.  
   - Registro de novo usuário com sucesso.  
   - Validação de erros para senhas diferentes e email inválido.
+  - Cenários em BDD para senhas diferentes e email inválido.
 
 ## Estrutura do Projeto
 
@@ -39,6 +41,7 @@ Os testes abrangem:
    npx cypress run
   
 ## Notas Adicionais
- - Devido ao layout da aplicação (uso de flip card para alternar entre os formulários de login e registro), alguns testes utilizam a opção { force: true } para interagir com elementos que, pelo CSS, podem não estar visíveis.
+ -  Os cenários de testes foram escritos em formato BDD (Gherkin) e também em Cypress puro.
+ - Devido ao layout da aplicação (uso de flip card), alguns testes utilizam `{ force: true }`.
  - Se houver alterações na aplicação, os seletores dos elementos podem necessitar de ajustes.
  
